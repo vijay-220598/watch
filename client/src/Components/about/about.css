@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  width: 100%;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  height: 80vh;
+}
+
+.about-left {
+  position: relative;
+}
+
+.about-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-box1 {
+  background-color: #ffde21;
+  width: 410px;
+  height: 350px;
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+
+.about-box2 {
+  background: black;
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  top: 40px;
+  left: 85px;
+}
+
+.about-box2 img {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+}
+
+span {
+  font-size: 25px;
+  font-weight: 600;
+  color: #d4af37;
+}
+
+.about-Right {
+  position: relative;
+  padding-top: 25px;
+}
+
+.about-Right h6 {
+  border: 1px solid #d4af37;
+  width: 40px;
+  margin: 10px;
+  margin-left: 25px;
+}
+
+.about-Right h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.about-Right h2 {
+  font-size: 40px;
+  font-weight: 610;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.about-Right p {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 510;
+  line-height: 33px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.about-Right h3 a {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(242, 129, 35);
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.about-Right h3 a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 770px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 420px;
+    width: 100%;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-box1 {
+    background-color: #d4af37;
+    width: 400px;
+    height: 350px;
+    top: 70px !important;
+  }
+
+  .about-box2 {
+    position: absolute;
+    background: black;
+    width: 400px;
+    height: 350px;
+    top: 20px;
+  }
+
+  .about-box2 img {
+    width: 280px;
+    height: 300px;
+    top: 25px;
+    left: 50px;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d4af37;
+  }
+
+  .about-Right {
+    padding: 10px;
+  }
+
+  .about-Right h6 {
+    border: 1px solid #d4af37;
+    width: 45px;
+    margin: 8px;
+    margin-left: 25px;
+  }
+
+  .about-Right h5 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .about-Right h2 {
+    font-size: 38px;
+    font-weight: 510;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .about-Right p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 28px;
+    text-indent: 50px;
+  }
+
+  .about-Right h3 a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(242, 129, 35);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 420px;
+    width: 100%;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-box1 {
+    background-color: #d4af37;
+    width: 410px;
+    height: 350px;
+    top: 55px;
+  }
+
+  .about-box2 {
+    position: absolute;
+    background: black;
+    width: 400px;
+    height: 350px;
+    top: 0px;
+  }
+
+  .about-box2 img {
+    width: 280px;
+    height: 300px;
+    top: 25px;
+    left: 50px;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d4af37;
+  }
+
+  .about-Right {
+    padding: 10px;
+  }
+
+  .about-Right h6 {
+    border: 1px solid #d4af37;
+    width: 45px;
+    margin: 8px;
+    margin-left: 25px;
+  }
+
+  .about-Right h5 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .about-Right h2 {
+    font-size: 38px;
+    font-weight: 510;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .about-Right p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 28px;
+    text-indent: 50px;
+  }
+
+  .about-Right h3 a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(242, 129, 35);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  about-container {
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .about-box1 {
+    background-color: #d4af37;
+    width: 270px;
+    height: 250px;
+    top: 50px;
+    left: 13px;
+  }
+
+  .about-box2 {
+    position: absolute;
+    background: black;
+    width: 260px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+  }
+
+  .about-box2 img {
+    width: 180px;
+    height: 200px;
+    top: 25px;
+    left: 40px;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d4af37;
+  }
+
+  .about-Right {
+    padding: 10px;
+  }
+
+  .about-Right h6 {
+    border: 1px solid #d4af37;
+    width: 40px;
+    margin: 8px;
+    margin-left: 20px;
+  }
+
+  .about-Right h5 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .about-Right h2 {
+    font-size: 30px;
+    font-weight: 510;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-box1 {
+    background-color: #d4af37;
+    width: 270px;
+    height: 250px;
+    top: 50px;
+    left: 13px;
+  }
+
+  .about-box2 {
+    position: absolute;
+    background: black;
+    width: 260px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+  }
+
+  .about-box2 img {
+    width: 180px;
+    height: 200px;
+    top: 25px;
+    left: 40px;
+  }
+
+  span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #d4af37;
+  }
+
+  .about-Right {
+    padding: 10px;
+  }
+
+  .about-Right h6 {
+    border: 1px solid #d4af37;
+    width: 40px;
+    margin: 8px;
+    margin-left: 20px;
+  }
+
+  .about-Right h5 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .about-Right h2 {
+    font-size: 30px;
+    font-weight: 510;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .about-Right p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+  .about-Right h3 a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(242, 129, 35);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-box1 {
+    background-color: #d4af37;
+    width: 230px;
+    height: 230px;
+    top: 50px;
+  }
+
+  .about-box2 {
+    position: absolute;
+    background: black;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+  }
+
+  .about-box2 img {
+    width: 180px;
+    height: 180px;
+    top: 20px;
+    left: 25px;
+  }
+
+  span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #d4af37;
+  }
+
+  .about-Right {
+    padding: 10px;
+  }
+
+  .about-Right h6 {
+    border: 1px solid #d4af37;
+    width: 40px;
+    margin: 8px;
+    margin-left: 20px;
+  }
+
+  .about-Right h5 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .about-Right h2 {
+    font-size: 23px;
+    font-weight: 510;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .about-Right p {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+  .about-Right h3 a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(242, 129, 35);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 550px) {
+  .about-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 100%;
+  }
+
+  .about-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-box1 {
+    background-color: #d4af37;
+    width: 320px;
+    height: 290px;
+    top: 50px;
+    left: 30px;
+  }
+
+  .about-box2 {
+    position: absolute;
+    background: black;
+    width: 320px;
+    height: 290px;
+    position: absolute;
+    top: 5px;
+    left: 80px;
+  }
+
+  .about-box2 img {
+    width: 180px;
+    height: 200px;
+    top: 25px;
+    left: 40px;
+  }
+
+  span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #d4af37;
+  }
+
+  .about-Right {
+    padding: 10px;
+  }
+
+  .about-Right h6 {
+    border: 1px solid #d4af37;
+    width: 40px;
+    margin: 8px;
+    margin-left: 20px;
+  }
+
+  .about-Right h5 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .about-Right h2 {
+    font-size: 30px;
+    font-weight: 510;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .about-Right p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+  .about-Right h3 a {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(242, 129, 35);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}

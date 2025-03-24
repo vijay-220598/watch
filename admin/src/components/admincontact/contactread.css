@@ -1,0 +1,119 @@
+.contactread {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.contact_table {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact_table th,
+.contact_table td {
+  padding: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contact_table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.nav-button,
+.page-button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ffa920;
+  background-color: white;
+  color: #ffa920;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.page-button:hover,
+.nav-button:hover {
+  background-color: #ffa920;
+  color: white;
+}
+
+.page-button.active {
+  background-color: #ffa920;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #ffa920;
+}
+
+.nav-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border: 1px solid #999;
+}
+
+/* Tablets and Medium Screens */
+@media screen and (max-width: 1024px) {
+  .contact_table th,
+  .contact_table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  .contact_table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .contact_table th,
+  .contact_table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile Screens - Stack Table */
+@media screen and (max-width: 480px) {
+  .contact_table,
+  .contact_table thead,
+  .contact_table tbody,
+  .contact_table th,
+  .contact_table td,
+  .contact_table tr {
+    display: block;
+  }
+
+  .contact_table thead {
+    display: none; /* Hide Table Header */
+  }
+
+  .contact_table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .contact_table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .contact_table td::before {
+    content: attr(data-label); /* Display Column Header Name */
+    font-weight: bold;
+    color: #ffa920;
+  }
+}

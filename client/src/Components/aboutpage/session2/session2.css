@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.section-about {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.page-container {
+  background-color: rgb(248, 204, 174);
+  width: 100%;
+  height: 55vh;
+  transform: skewY(-6deg);
+}
+
+.page-img-container img {
+  width: 28rem;
+}
+
+.page-inner-container {
+  transform: skewY(6deg);
+  width: 80%;
+  margin: auto;
+}
+
+.page-container,
+.page-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content h1 {
+  color: rgb(77, 73, 73);
+  font-size: 4rem;
+  font-weight: 510;
+  font-family: "Poppins", sans-serif;
+}
+
+.content-para {
+  font-size: 1rem;
+  color: rgb(77, 73, 73);
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  max-width: 80%;
+  padding: 20px;
+  text-indent: 50px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-container {
+    height: auto;
+    padding: 50px 0;
+    transform: none;
+  }
+
+  .page-inner-container {
+    transform: none;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .page-img-container img {
+    width: 24rem;
+  }
+
+  .page-content h1 {
+    font-size: 3rem;
+  }
+
+  .content-para {
+    font-size: 0.9rem;
+    line-height: 23px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-img-container img {
+    width: 20rem;
+  }
+
+  .page-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-para {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-container {
+    padding: 30px 0;
+  }
+
+  .page-img-container img {
+    width: 15rem;
+  }
+
+  .page-content h1 {
+    font-size: 2rem;
+  }
+
+  .content-para {
+    font-size: 0.75rem;
+    padding: 10px;
+  }
+}

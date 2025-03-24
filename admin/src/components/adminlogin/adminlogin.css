@@ -1,0 +1,37 @@
+.login_page {
+  padding: 30px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.whole_continer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+  width: 35%;
+  margin-left: 32%;
+}
+
+/* .back {
+  background-image: url("../../assets/aboutback1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.back::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.544);
+  position: absolute;
+  inset: 0;
+}
+
+.submit_button-whole {
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+.banner-container {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  justify-content: center;
+  padding: 40px;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 80%;
+  height: 23vh;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* Large Screens (Above 1200px) */
+@media screen and (min-width: 1200px) {
+  .banner-container {
+    height: 40vh;
+    padding: 50px;
+  }
+
+  .banner-wrapper {
+    width: 70%;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-container {
+    height: 30vh;
+    padding: 30px;
+  }
+
+  .banner-wrapper {
+    width: 80%;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-container {
+    height: 25vh;
+    padding: 20px;
+  }
+
+  .banner-wrapper {
+    width: 90%;
+    height: 18vh;
+  }
+
+  .banner-image {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-container {
+    height: 20vh;
+    padding: 10px;
+  }
+
+  .banner-wrapper {
+    width: 95%;
+    height: 15vh;
+  }
+
+  .banner-image {
+    object-fit: cover;
+  }
+}
