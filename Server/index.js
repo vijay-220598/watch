@@ -29,6 +29,10 @@ app.use("/registration", RegPageRouter);
 const ContactRouter = require("./Route/ContactRoute");
 app.use("/contact", ContactRouter);
 
+app.get("/", (req, res) => {
+  res.send("Backend is connected");
+});
+
 // Port Configuration
 const port = process.env.PORT || 8000;
 
