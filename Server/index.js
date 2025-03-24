@@ -5,12 +5,21 @@ const app = express();
 
 app.use(express.json());
 
+// CORS Configuration
 const allowedUrl = {
   origin: ["http://localhost:3000", "http://localhost:3001"],
-  method: ["POST", "GET"],
+  methods: ["POST", "GET"],
 };
 app.use(cors(allowedUrl));
 
+// Database Connection String
+const username = encodeURIComponent("viruvijay39");
+const password = encodeURIComponent("9600482833");
+const dbName = "yourDatabaseName";
+
+const mongo_url = `mongodb+srv://${username}:${password}@cluster0.do4ps.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+
+// Routes
 const AdminloginReg = require("./Route/AdminLoginRoute");
 app.use("/adminlogin", AdminloginReg);
 
@@ -20,19 +29,24 @@ app.use("/registration", RegPageRouter);
 const ContactRouter = require("./Route/ContactRoute");
 app.use("/contact", ContactRouter);
 
-const port = "8000";
-const mongo_url = "mongodb://localhost:27017/vortex-mern";
+// Port Configuration
+const port = process.env.PORT || 8000;
 
+// MongoDB Connection
 mongoose
-  .connect(mongo_url)
+  .connect(mongo_url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
-    console.log("mongodp is connected");
+    console.log("✅ MongoDB Connected Successfully!");
     app.listen(port, () => {
-      console.log(`sever is connected ${port}`);
+      console.log(`🚀 Server is running on http://localhost:${port}`);
     });
   })
-  .catch((err) => {
-    console.log(err);
+  .catch((error) => {
+    console.error("❗ MongoDB Connection Error:", error.message);
+    process.exit(1); // Exit on Failure
   });
 
 module.exports = app;
