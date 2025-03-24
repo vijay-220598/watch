@@ -7,7 +7,11 @@ app.use(express.json());
 
 // CORS Configuration
 const allowedUrl = {
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  // origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: [
+    "https://watch-client-tawny.vercel.app",
+    "https://watch-admin.vercel.app",
+  ],
   methods: ["POST", "GET"],
 };
 app.use(cors(allowedUrl));
