@@ -22,7 +22,11 @@ const Signup = () => {
     console.log("Submitting data:", user);
 
     try {
-      const addNewUser = await Client.post("/registration/registrationadd", user);
+      const addNewUser = await Client.post(
+        "/registration/registrationadd",
+        user,
+        { withCredentials: true }
+      );
       console.log("Response:", addNewUser);
 
       if (addNewUser.status === 200) {

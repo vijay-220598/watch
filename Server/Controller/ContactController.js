@@ -1,7 +1,7 @@
 const contactSchema = require("../Model/ContectModel");
 
 exports.newcontactReg = async (req, res) => {
-  console.log("new contactreg controller");
+  console.log("newcontactreg controller");
 
   const { name, email, message, mobile, address, brand, model } = req.body;
 

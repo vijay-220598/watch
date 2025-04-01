@@ -205,7 +205,7 @@ form .user-details .input-box {
   height: 3px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .contact-header {
     height: 80vh;
   }
@@ -228,7 +228,7 @@ form .user-details .input-box {
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (min-width: 900px) {
   .contact-header {
     height: 60vh;
   }
@@ -238,7 +238,7 @@ form .user-details .input-box {
   }
 
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
@@ -249,7 +249,30 @@ form .user-details .input-box {
 
   .watch-service-content {
     gap: 60px;
-    flex-direction: column;
+  }
+} */
+
+@media (min-width: 850px) and (max-width: 1200px) {
+  .contact-header {
+    height: 60vh;
+  }
+
+  .contact-header h1 {
+    font-size: 4rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .watch-service-content {
+    gap: 60px;
   }
 }
 
@@ -284,7 +307,7 @@ form .user-details .input-box {
   }
 
   .watch-service-content {
-    padding: 20px;
+    display: flex;
     gap: 40px;
   }
 }
@@ -306,12 +329,21 @@ form .user-details .input-box {
     grid-template-columns: 1fr;
   }
 
+  .contact-address {
+    background-color: #ffde21;
+    border-bottom-right-radius: 50px;
+  }
+
   .contact-form {
     padding: 10px;
   }
 
-  .contact-form .form-lead {
+  .contact-form {
     font-size: 20px;
+  }
+
+  .form-lead h1 {
+    font-size: 18px;
   }
 
   .contact-button button {
@@ -320,15 +352,33 @@ form .user-details .input-box {
   }
 
   .watch-step img {
-    width: 100px;
+    width: 50px;
   }
 
   .watch-step h5 {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .watch-service-content {
+    display: flex;
     padding: 10px;
     gap: 20px;
+  }
+
+  .watch-service-heading h2 {
+    font-size: 15px;
+    height: 70px;
+  }
+
+  .contact-icon p {
+    font-size: 15px;
+  }
+  .location {
+    font-size: 40px;
+  }
+
+  .phone,
+  .mail {
+    font-size: 25px;
   }
 }

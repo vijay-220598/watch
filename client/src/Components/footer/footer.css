@@ -135,7 +135,6 @@
   padding-bottom: 8px;
 }
 
-
 @media screen and (min-width: 1200px) {
   .footer-flex {
     grid-template-columns: repeat(5, 0.5fr);
@@ -155,12 +154,16 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .footer-container {
+    background-color: black;
+    height: 100%;
+  }
 
-@media screen and (max-width: 1200px) {
   .footer-flex {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
   }
 
   .footer-content h2 {
@@ -176,8 +179,12 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
+  .footer-container {
+    background-color: black;
+    height: 100%;
+  }
+
   .footer-flex {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -202,8 +209,12 @@
   }
 }
 
-
 @media screen and (max-width: 480px) {
+  .footer-container {
+    background-color: black;
+    height: 100%;
+  }
+
   .footer-flex {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -229,6 +240,16 @@
 
   .icon a,
   .footer-wts {
-    padding: 5px;
+    color: rgb(235, 224, 224);
+    background-color: rgb(60, 57, 57);
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+  }
+
+  .footer-end p {
+    font-size: 7px;
   }
 }

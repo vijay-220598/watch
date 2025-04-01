@@ -12,18 +12,25 @@ const allowedUrl = {
     "https://watch-client-tawny.vercel.app",
     "https://watch-admin.vercel.app",
   ],
-  methods: ["POST", "GET"],
+  methods: ["POST", "GET", "DELETE"],
+  credential: true,
 };
 app.use(cors(allowedUrl));
 
-// Database Connection String
+//Database Connection String
 const username = encodeURIComponent("viruvijay39");
 const password = encodeURIComponent("9600482833");
 const dbName = "yourDatabaseName";
 
 const mongo_url = `mongodb+srv://${username}:${password}@cluster0.do4ps.mongodb.net/${dbName}?retryWrites=true&w=majority`;
-
+// const mongo_url = "mongodb://localhost:27017/vortex-mern";
 // Routes
+const productUploadRouter = require("./Route/ImageRoute");
+app.use("/productUpload", productUploadRouter);
+
+const clientLogin = require("./Route/LoginRoute");
+app.use("/login", clientLogin);
+
 const AdminloginReg = require("./Route/AdminLoginRoute");
 app.use("/adminlogin", AdminloginReg);
 
@@ -46,10 +53,11 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
+  .connect(mongo_url)
   .then(() => {
-    console.log("✅ MongoDB Connected Successfully!");
+    console.log("MongoDB Connected Successfully!");
     app.listen(port, () => {
-      console.log(`🚀 Server is running on http://localhost:${port}`);
+      console.log(`Server is running on http://localhost:${port}`);
     });
   })
   .catch((error) => {

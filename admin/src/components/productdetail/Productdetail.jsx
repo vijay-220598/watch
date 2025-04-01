@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 import Header from "../header/Header";
-import ContactRead from "../admincontact/ContactRead";
+import Detailread from "./Detailread";
 
 const Productdetail = () => {
   return (
@@ -10,7 +10,7 @@ const Productdetail = () => {
         <Sidebar />
         <Header />
         <div className="work-container">
-          <ContactRead />
+          <Detailread />
         </div>
       </div>
     </>

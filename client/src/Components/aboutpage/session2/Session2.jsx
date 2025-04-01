@@ -1,6 +1,7 @@
 import React from "react";
 import "./session2.css";
 import aboutwatch from "../../../assets/aboutwatch2.png";
+import { motion } from "motion/react";
 
 const Session2 = () => {
   return (
@@ -19,7 +20,13 @@ const Session2 = () => {
               </p>
             </div>
             <div className="page-img-container">
-              <img src={aboutwatch} alt="watch" />
+              <motion.div
+                initial={{ y: 100 }}
+                whileInView={{ y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <img src={aboutwatch} alt="watch" />
+              </motion.div>
             </div>
           </div>
         </div>

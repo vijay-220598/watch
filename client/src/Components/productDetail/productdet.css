@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+.detail-head h1 {
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.card-f {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.img-detail {
+  width: 200px;
+  height: 280px;
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+}
+
+.card-t {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card h5 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-size-adjust: 15px;
+}
+
+.detail-card p {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-size-adjust: 15px;
+}
+
+.productdet-container {
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .card-f {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productdet-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .card-f {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-detail {
+    height: 250px;
+  }
+
+  .productdet-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-f {
+    grid-template-columns: 1fr;
+  }
+
+  .img-detail {
+    height: 200px;
+  }
+
+  .detail-card h5,
+  p {
+    font-size: 13px;
+  }
+
+  .productdet-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-detail {
+    height: 150px;
+  }
+
+  .detail-card h5,
+  p {
+    font-size: 12px;
+  }
+
+  .productdet-container {
+    padding: 10px;
+  }
+
+  .productdet-container {
+    padding: 20px;
+  }
+}

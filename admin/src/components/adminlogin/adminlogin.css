@@ -1,5 +1,5 @@
 .login_page {
-  padding: 30px;
+  padding: 50px;
   margin: 20px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
@@ -7,17 +7,15 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  width: 400px;
 }
-
 .whole_continer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;
   width: 35%;
-  margin-left: 32%;
+  margin-left: 30%;
 }
-
 /* .back {
   background-image: url("../../assets/aboutback1.jpg");
   background-position: center;

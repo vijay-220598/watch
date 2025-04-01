@@ -13,7 +13,7 @@ import Product from "./Components/product/Product";
 import Men from "./Components/men/Men";
 import Women from "./Components/women/Women";
 import Contact from "./Components/contact/Contact";
-// import ContactForm from "./Components/contact/ContactForm";
+import Readmore from "./Components/productDetail/readmore/Readmore";
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element={<Signup />} />
-          {/* <Route path="/form" element={<ContactForm />} /> */}
+          <Route path="/readmore/:id" element={<Readmore />} />
         </Routes>
       </BrowserRouter>
     </>

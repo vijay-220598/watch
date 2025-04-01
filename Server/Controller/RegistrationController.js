@@ -20,6 +20,21 @@ exports.newRegistration = async (req, res) => {
         message: "success",
       });
     }
+
+    const token = jwt.sign({ id: SignupCheck._id }, secertKey, {
+      expiresIn: expiryTime,
+    });
+    console.log("sigin", token);
+    if (token) {
+      res
+        .status(200)
+        .cookie("registrationToken", token, {
+          httpOnly: true,
+          sameSite: "none",
+          secure: true,
+        })
+        .json({ message: "success", token: token });
+    }
   } catch (err) {
     console.log(err);
   }

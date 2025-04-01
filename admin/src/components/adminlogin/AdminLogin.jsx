@@ -34,11 +34,12 @@ const AdminLogin = () => {
     <>
       <div className="back">
         <div className="whole_continer min-vh-100  justify-content-center align-items-center">
-          <div className="login_page">
-            <h3 className="mb-3 text-center" style={{ fontWeight: "bolder" }}>
-              Login page
-            </h3>
-            <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
+            <div className="login_page">
+              <h3 className="mb-3 text-center" style={{ fontWeight: "bolder" }}>
+                Login page
+              </h3>
+
               <div className="mb-3 ">
                 <label htmlFor="exampleInputEmail1" className="form-label">
                   Email address
@@ -72,8 +73,8 @@ const AdminLogin = () => {
                   Submit
                 </button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </>

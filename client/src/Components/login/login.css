@@ -9,7 +9,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
-
+z
 .whole_continer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
